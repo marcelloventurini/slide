@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>carousel</title>
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="slide">
+    <ul class="slide-items">
+      <li class="item active">
+        <img src="img/cafe1.png">
+        <span onclick="addFavoriteClass('0')" class="favstar"><img class="favItem" src="img/favstar.svg" alt=""></span>
+      </li>
+
+      <li class="item">
+        <img src="img/cafe2.png">
+        <span onclick="addFavoriteClass('1')" class="favstar"><img class="favItem" src="img/favstar.svg" alt=""></span>
+      </li>
+
+      <li class="item">
+        <img src="img/cafe3.png">
+        <span onclick="addFavoriteClass('2')" class="favstar"><img class="favItem" src="img/favstar.svg" alt=""></span>
+      </li>
+    </ul>
+
+    <div class="prev"> <img src="img/back.svg" alt=""> </div>
+    <div class="next"> <img src="img/forward.svg" alt=""> </div>
+  </div>
+
+  <div class="container-form">
+    <form>
+      <label for="storeinput">store</label>
+      <input type="text" name="storeinput" id="storeinput">
+      <input class="btn" type="button" value="submit" onclick="newStore('table')">
+    </form>
+  </div>
+
+  <div class="container-table">
+    <table id="table">
+      <thead>
+        <tr>
+          <th>store</th>
+        </tr>
+      </thead>
+      <tbody id="tbody">
+
+      </tbody>
+    </table>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>
